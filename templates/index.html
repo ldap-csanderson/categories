@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Taxonomy Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .description {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        form {
+            margin: 30px 0;
+        }
+        input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Taxonomy Generator</h1>
+    
+    <div class="description">
+        <p>This tool analyzes websites and generates a hierarchical taxonomy of products, services, and offerings in CSV format. The output includes:</p>
+        <ul>
+            <li>Hierarchical category paths</li>
+            <li>Seasonal indicators</li>
+            <li>Confidence ratings</li>
+            <li>Source URLs</li>
+            <li>Reasoning for categorization</li>
+        </ul>
+        <p>Enter a URL below to receive a downloadable CSV file with the taxonomy analysis.</p>
+    </div>
+
+    <form method="POST" action="/">
+        <input type="url" name="url" placeholder="Enter website URL (e.g., https://example.com)" required>
+        <button type="submit">Generate Taxonomy CSV</button>
+    </form>
+</body>
+</html>

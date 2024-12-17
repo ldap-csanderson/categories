@@ -1,0 +1,4 @@
+Flask==3.0.0
+playwright==1.40.0
+google-cloud-aiplatform==1.38.1
+python-dateutil==2.8.2
